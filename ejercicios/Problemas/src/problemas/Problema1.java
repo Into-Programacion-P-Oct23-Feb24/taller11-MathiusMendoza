@@ -16,11 +16,22 @@ public class Problema1 {
      */
     public static void main(String[] args) {
         int[][] informacion = {{1, 2, 3}, {10, 20, 30}, {100, 200, 300}};
+
         imprimirDatos(informacion);
+        // LLamamos al método para imprimir los valores pares
     }
+    
+    // Creamos un método que imprime los valores pares 
+    // Recibe como siguiente un arreglo bidimensional de solo enteros
+    public static void imprimirDatos(int[][] arregloBidimensional) {
+        System.out.println("Valores pares del arreglo bidimensional:");
 
-    public static void imprimirDatos(int[][] datos) {
-
+        for (int i = 0; i < arregloBidimensional.length; i++) {
+            for (int j = 0; j < arregloBidimensional[i].length; j++) {
+                if (arregloBidimensional[i][j] % 2 == 0) {
+                    System.out.println(arregloBidimensional[i][j]);
+                }
+            }
+        }
     }
-
 }
