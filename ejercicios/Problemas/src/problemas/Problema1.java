@@ -27,9 +27,13 @@ public class Problema1 {
         System.out.println("Valores pares del arreglo bidimensional:");
 
         for (int i = 0; i < arregloBidimensional.length; i++) {
+        // Este ciclo for itera a traves de las filas del arreglo 
             for (int j = 0; j < arregloBidimensional[i].length; j++) {
+            // Este ciclo for itera a travez de las columnas de cada fila
                 if (arregloBidimensional[i][j] % 2 == 0) {
+                // La presente linea de codigo verifica si el numero es par
                     System.out.println(arregloBidimensional[i][j]);
+                    // Finalmente imprime el valor de par
                 }
             }
         }
